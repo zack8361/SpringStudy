@@ -32,7 +32,7 @@ public class helloController {
 //    그대로 데이터만 내려주는 방식.
 //    크게 쓰이는 방식은 아니다..
     public String helloString(@RequestParam("name") String name){
-        
+
         return "hello" + name;
     }
 }
