@@ -15,7 +15,6 @@ class MemberServiceTest {
 
     MemberService memberService = new MemberService();
     MemoryMemberRepository memberRepository = new MemoryMemberRepository();
-
     @AfterEach
     public void afterEach(){
         memberRepository.clearStore();

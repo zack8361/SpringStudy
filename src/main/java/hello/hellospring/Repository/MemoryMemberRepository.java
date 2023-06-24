@@ -2,12 +2,16 @@ package hello.hellospring.Repository;
 
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 /**
  * 선언부와 구현부중 이부분은 구현부이고. -> interface 를 상속 받을때는 Implements 를 사용한다.
  */
+
+
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
